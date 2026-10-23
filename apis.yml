@@ -1,24 +1,58 @@
 aid: department-of-land-resources-ministry-of-rural-development-government-of-india
+
 name: Department of Land Resources, Ministry of Rural Development, Government of India
+
 description: 'Department of Land Resources, Ministry of Rural Development, Government of India is a company
   surfaced via the API Evangelist harvest backlog (source: vc-portfolio) and added to the network as a
   stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/department-of-land-resources-ministry-of-rural-development-government-of-india/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/department-of-land-resources-ministry-of-rural-development-government-of-india-hosts.yml
+- type: Vendors
+  url: vendors/department-of-land-resources-ministry-of-rural-development-government-of-india-vendors.yml
+- type: DomainSecurity
+  url: security/department-of-land-resources-ministry-of-rural-development-government-of-india-domain-security.yml
 - type: Website
   url: https://www.dolr.gov.in/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The provider's website returns HTML shells for typical OpenAPI discovery URLs, indicating JavaScript‑rendered documentation.
+  evidence:
+    - url: https://www.dolr.gov.in/openapi.json
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
